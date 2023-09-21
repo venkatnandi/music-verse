@@ -1,0 +1,79 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1(style="color: #FFFFFF") I Wanna Be Yours
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-empty
+            span.glyphicon.glyphicon-star-empty
+            .panel.panel-primary
+            .panel-heading
+              h5.panel-title(style="color: #FFFFFF") Song by Arctic Monkeys 
+            .panel-body
+
+          .panel.panel-primary
+            .panel-heading
+              h5.panel-title(style="color: #FFFFFF") About
+            .panel-body
+              p 
+          .panel.panel-primary
+            .panel-heading
+             h5.panel-title(style="color: #FFFFFF") About the author
+            .panel-body
+              p | The song reworks John Cooper Clarke’s poem of the same name. The song focuses on similar themes in the poem. In an interview, Clarke said his poem is:
+                | one of a classic style of love poem, love song, in which the writer expresses his desire to be useful to the object of his desire.
+            
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+
+            .panel-body
+              img(src='https://images.genius.com/af4ac59ba9e3e8b0fe70d7c1156ff8f2.1000x1000x1.jpg', width='400', height='400',alt='Italian Trulli',  aria-label='Placeholder: Image cap', focusable='false', role='img', preserveAspectRatio='xMidYMid slice',  style='font-size:1.125rem;text-anchor:middle')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.button.btn.btn-info(type='button', href='/songs/review/new' ) Add Review
+              h2.panel-title Readers reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                  span.reviewAuthor
+                    strong Sherlock Holmes 
+                  small.reviewTimestamp 
+                    strong 16 July 2013
+                  .col-xs-12
+                    p 
+                      em  I will never ever rate this lower than 5 stars. BEAUTIFUL.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                      
+                  span.reviewAuthor
+                    strong Mr Res
+                  small.reviewTimestamp 
+                    strong 16 July 2013
+                  .col-xs-12
+                    p 
+                      em  What a great book. Love the creativity

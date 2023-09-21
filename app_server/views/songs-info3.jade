@@ -1,0 +1,79 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1(style="color: #FFFFFF") Sunflower-Spider-Man: Into the Spider-Verse
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-empty
+            span.glyphicon.glyphicon-star-empty
+            .panel.panel-primary
+            .panel-heading
+              h5.panel-title(style="color: #FFFFFF") Song by Post Malone and Swae Lee
+            .panel-body
+
+          .panel.panel-primary
+            .panel-heading
+              h5.panel-title(style="color: #FFFFFF") About
+            .panel-body
+              p “Sunflower” marks the second collaboration by Post Malone and Swae Lee. It serves as the second single for Post Malone’s 2019 album, Hollywood’s Bleeding, and is part of the soundtrack for the 2018 animated film Spider-Man: Into the Spider-Verse.
+
+          .panel.panel-primary
+            .panel-heading
+             h5.panel-title(style="color: #FFFFFF") About Post Malone
+            .panel-body
+              p Austin Richard Post known professionally as Post Malone, is an American singer, rapper, songwriter, and record producer.
+            
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+
+            .panel-body
+              img(src='https://i.scdn.co/image/ab67616d0000b273e2e352d89826aef6dbd5ff8f', width='400', height='400',alt='Italian Trulli',  aria-label='Placeholder: Image cap', focusable='false', role='img', preserveAspectRatio='xMidYMid slice',  style='font-size:1.125rem;text-anchor:middle')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.button.btn.btn-info(type='button', href='/songs/review/new' ) Add Review
+              h2.panel-title Readers reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                  span.reviewAuthor
+                    strong Sherlock Holmes 
+                  small.reviewTimestamp 
+                    strong 16 July 2013
+                  .col-xs-12
+                    p 
+                      em  I will never ever rate this lower than 5 stars. BEAUTIFUL.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                      
+                  span.reviewAuthor
+                    strong Mr Res
+                  small.reviewTimestamp 
+                    strong 16 July 2013
+                  .col-xs-12
+                    p 
+                      em  What a great book. Love the creativity
