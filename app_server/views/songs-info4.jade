@@ -1,0 +1,81 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1(style="color: #FFFFFF") Let Her Go
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-empty
+            span.glyphicon.glyphicon-star-empty
+            .panel.panel-primary
+            .panel-heading
+              h5.panel-title(style="color: #FFFFFF") Song by Passenger
+            .panel-body
+
+          .panel.panel-primary
+            .panel-heading
+              h5.panel-title(style="color: #FFFFFF") About
+            .panel-body
+              p Jack Reacher. Hero. Loner. Soldier. Soldier’s son. An elite military cop, he was one of the army’s brightest stars. But in every cop’s life there is a turning point. One case. One messy, tangled case that can shatter a career. Turn a lawman into a renegade. And make him question words like honor, valor, and duty. For Jack Reacher, this is that case.
+              p 496 pages
+              p First published May 11, 2004
+
+          .panel.panel-primary
+            .panel-heading
+             h5.panel-title(style="color: #FFFFFF") About the author
+            .panel-body
+              p Lee Child was born October 29th, 1954 in Coventry, England, but spent his formative years in the nearby city of Birmingham. By coincidence he won a scholarship to the same high school that JRR Tolkien had attended. He went to law school in Sheffield, England, and after part-time work in the theater he joined Granada Television in Manchester for what turned out to be an eighteen-year career as a presentation director during British TV's "golden age." During his tenure his company made Brideshead Revisited, The Jewel in the Crown, Prime Suspect, and Cracker. But he was fired in 1995 at the age of 40 as a result of corporate restructuring.
+            
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+
+            .panel-body
+              img(src='https://i.scdn.co/image/ab67616d0000b273d06310a3394748073b66fbda', width='400', height='400',alt='Italian Trulli',  aria-label='Placeholder: Image cap', focusable='false', role='img', preserveAspectRatio='xMidYMid slice',  style='font-size:1.125rem;text-anchor:middle')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.button.btn.btn-info(type='button', href='/songs/review/new' ) Add Review
+              h2.panel-title Readers reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                  span.reviewAuthor
+                    strong Sherlock Holmes 
+                  small.reviewTimestamp 
+                    strong 16 July 2013
+                  .col-xs-12
+                    p 
+                      em  I will never ever rate this lower than 5 stars. BEAUTIFUL.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                      
+                  span.reviewAuthor
+                    strong Mr Res
+                  small.reviewTimestamp 
+                    strong 16 July 2013
+                  .col-xs-12
+                    p 
+                      em  What a great book. Love the creativity

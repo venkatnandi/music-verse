@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title = title
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap2.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap_icons.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    body(data-bs-theme='dark')
+    nav.navbar.navbar-expand-lg.bg-primary(data-bs-theme='dark')
+      .container-fluid
+        a.navbar-brand(href='/') Musicverse
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarColor01', aria-controls='navbarColor01', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarColor01.collapse.navbar-collapse
+          ul.navbar-nav.me-auto
+            
+            li.nav-item
+              a.nav-link(href='/songs/songs-catalogue') Catalogue
+            li.nav-item
+              a.nav-link(href='/about') About
+            
+          form.d-flex
+            input.form-control.me-sm-2(type='search', placeholder='Search')
+            button.btn.btn-secondary.my-2.my-sm-0(type='submit') Search
+    .container
+      block content
+
+      footer
+        .row
+          .col-xs-12
+            small &copy; Venkat Nandi
+    
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
